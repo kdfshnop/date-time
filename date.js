@@ -2,11 +2,13 @@
 * @Author: Administrator
 * @Date:   2018-07-06 10:15:26
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-07-06 10:16:29
+* @Last Modified time: 2018-08-29 15:06:36
 */
 
 'use strict';
 getNowFormatDate() {
+            var timestamp = Date.parse(new Date());//获取当前时间的时间戳;
+            var date=new Date(1528776156000);//根据时间戳获取时间,日期;
             let date = new Date();
             let seperator1 = "-";
             let year = date.getFullYear();
