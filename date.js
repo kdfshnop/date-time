@@ -2,13 +2,13 @@
 * @Author: Administrator
 * @Date:   2018-07-06 10:15:26
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-08-29 15:06:36
+* @Last Modified time: 2018-09-10 10:09:16
 */
 
 'use strict';
 getNowFormatDate() {
-            var timestamp = Date.parse(new Date());//获取当前时间的时间戳;
-            var date=new Date(1528776156000);//根据时间戳获取时间,日期;
+            var timestamp = Date.parse(new Date());//获取当前时间的时间戳;但是无法根据时间戳获取年月日;
+            var date=new Date(1528776156000);//根据时间戳获取时间,日期;Mon Sep 10 2018 10:08:41 GMT+0800 (中国标准时间)这种形式才可以获取年月日；
             let date = new Date();
             let seperator1 = "-";
             let year = date.getFullYear();
